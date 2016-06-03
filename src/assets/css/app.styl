@@ -1,0 +1,339 @@
+
+// SETUP FRAMEWORK
+// =============================================================================================================== //
+
+@import 'nib'
+
+global-reset()
+
+//- Variables
+$baseFontsize = 12px
+$fontBase = "Open Sans", sans-serif
+$fontTitle = "Armata", arial, sans-serif
+
+$bodyColor = whitesmoke
+$fontColor = #666
+$theme = #203648
+$support = #1C786B
+$default = darken($bodyColor, 18%)
+$border = darken($default, 24%)
+
+$light = alpha(#fff,0.6)
+$dark = alpha(#000,0.6)
+
+
+// BASE
+// =============================================================================================================== //
+html
+  font-size: $baseFontsize
+body
+  overflow-x: hidden
+  background: $bodyColor
+  color: $fontColor
+  font-size: $baseFontsize
+  line-height: 2
+  font-family: $fontBase
+  text-align: justify
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+h1,h2,h3,h4,.h1,.h2,.h3,.h4
+  font-family: $fontTitle
+  color: $theme
+  font-weight: 600
+h1, .h1
+  font-size: 2rem
+  margin: 0 0 1rem 0
+  text-transform: uppercase
+h2, .h2
+  font-size: 1.6rem
+  margin: 0 0 .7rem 0
+h3, .h3
+  font-size: 1.4rem
+  margin: 0 0 .5rem 0
+h4, .h4
+  font-size: 1rem
+  margin: 0 0 .5rem 0
+p
+  font-size: 1rem
+  margin: 0 0 2rem 0
+  overflow: hidden
+ul, ol
+  margin-bottom: 20px
+ul
+  list-style: none outside
+ol
+  list-style: decimal
+ol, ul.square, ul.circle, ul.disc
+  margin-left: 30px
+ul.square
+  list-style: square outside
+ul.circle
+  list-style: circle outside
+ul.disc
+  list-style: disc outside
+ul ul, ul ol,
+ol ol, ol ul
+  margin: 4px 0 5px 30px
+  font-size: 90%
+ul ul li, ul ol li,
+ol ol li, ol ul li
+  margin-bottom: 6px
+li
+  line-height: 18px
+  margin-bottom: 12px
+ul.large li
+  line-height: 21px
+li p
+  line-height: 21px
+dl
+dl dt
+  font-weight: bold
+  line-height: 0.7rem
+dl dd
+  line-height: 2.6rem
+  margin-bottom: 1rem
+a
+  color: $support
+  text-decoration: none
+  cursor: pointer
+  &:hover, &:visited
+    color: darken(rgba($theme),12%)
+
+::selection
+  background: darken(rgba($theme),10%)
+  color: #fff
+  text-shadow: none
+hr
+  overflow: hidden
+  border: 0
+  border-bottom: 1px dashed $border
+  width: 100%
+  height: 0
+  margin: 2rem 0
+blockquote
+  text-align: left
+  padding-left: 1rem
+  color: lighten(rgba($fontColor),20%)
+  font-style: italic
+  margin: 0.5rem 0
+  font-size: 0.8rem
+label
+  display: block
+  font-weight: bold
+input, select, textarea
+  background: white
+  padding: 0.9rem
+  border: 1px solid $border
+  color: lighten(rgba($fontColor),30%)
+  width: 100%;
+  box-sizing: border-box;
+form
+  margin-bottom 20px
+fieldset
+  margin-bottom 20px
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+textarea,
+select
+  border 1px solid #c5c5b5
+  box-sizing border-box
+  padding 5px
+  outline none
+  font 12px 'Asap', Arial, sans-serif
+  color #474545
+  margin 0
+  width 210px
+  max-width 100%
+  display block
+  margin-bottom 20px
+  background #fff!important
+  box-shadow 0 2px 3px #c5c5b5 inset
+select
+  padding 5px
+  width 220px
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus
+  border 1px solid $border
+  color $fontColor
+textarea
+  min-height 60px
+label,
+legend
+  display block
+  font-weight normal
+  font-size 0.7rem
+  margin-bottom 0.3rem
+input[type="checkbox"]
+  display inline
+label span,
+legend span
+  font-weight normal
+  font-size 13px
+  color #444
+table
+  width 100%
+  border-collapse collapse
+tr
+  &:nth-of-type(odd)
+    background #dce4ce
+th
+  background #4d301e
+  color white
+  font-weight bold
+td,
+th
+  padding 8px 5px
+  border 1px solid #d0dbbd
+  text-align left
+
+// Layout Helpers
+.title
+  font-size: .9rem
+  text-transform: uppercase
+  color: darken(rgba($default),10%)
+  text-align: right
+  border-bottom: 1px solid $border
+.big
+  font-size: 3rem
+.small
+  font-size: 0.8rem
+.box
+  box-sizing: border-box
+  padding: 2.2rem
+  border: 1px solid $border
+
+ul.inline-list
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    display: inline-block
+    text-align: center
+  a
+    text-decoration: none
+    padding: 1rem
+
+//Images
+.img-thumbnail
+  background: #fff
+  padding: 3px
+  border: 1px solid $border
+.img-left
+  float: left
+  margin-right: 1rem
+.img-right
+  float: right
+  margin-left: 1rem
+.img-circle
+  border-radius: 50%
+.img-wide
+  width: 100%
+  height: auto
+
+// Buttons
+.btn,button,input[type="submit"],input[type="reset"],input[type="button"]
+  background: $default
+  position: relative
+  border: 0
+  border-bottom: 3px solid darken($default, 10%)
+  color: $fontColor
+  display: block
+  width: 100%
+  text-align: center
+  box-sizing: border-box
+  font-size: 1rem
+  font-weight: normal
+  text-decoration: none
+  cursor: pointer
+  margin-bottom: 1rem
+  margin-right: 1rem
+  line-height: normal
+  padding: 1rem 1.8rem
+  font-family: $fontBase
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translatex(-50%)
+    height: 8px
+    width:100%
+    border-radius: 50%
+    z-index: -1
+    box-shadow: 0 0 8px darken($border,22%)
+  &:hover
+    color: $fontColor
+    background: darken($default, 8%)
+  &:active
+    background: darken($default, 18%)
+button::-moz-focus-inner,input::-moz-focus-inner
+  border: 0
+  padding: 0
+.btn-theme, button.btn-theme
+  background: $theme
+  color: white
+  border-color: darken($theme, 12%)
+  &:hover, &:visited, &:active
+    background: darken($theme, 8%) !important
+    color: white
+.btn-support, button.btn-support
+  background: $support
+  color: white
+  border-color: darken($support, 14%)
+  &:hover, &:visited, &:active
+    background: darken($support, 10%) !important
+    color: white
+
+.panel
+  margin:0 0 1.5rem 0
+  box-sizing:border-box
+  background: white
+  border:1px solid $border
+  position: relative
+  .panel-header
+    background: $support
+    padding: 1rem
+    h2,h3,h4,h5
+      color: white
+      margin: 0
+      line-height: 1
+  .panel-body
+    overflow:hidden
+    padding: 1rem
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translatex(-50%)
+    height: 8px
+    width:100%
+    border-radius: 50%
+    z-index: -1
+    box-shadow: 0 0 8px darken($border,22%)
+
+
+
+// LAYOUT
+// =============================================================================================================== //
+
+section
+  position: relative
+
+
+// 768 +
+@media only screen and (min-width: 768px)
+
+  .btn,button,input[type="submit"],input[type="reset"],input[type="button"]
+    display: inline-block
+    width: auto
