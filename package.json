@@ -1,5 +1,5 @@
 {
-  "name": "onsenui",
+  "name": "jadestyl",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -9,12 +9,16 @@
   "author": "Raymundo Rabago",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.1.2",
-    "browser-sync": "^2.10.1",
-    "css-mqpacker": "^4.0.0",
-    "gulp": "^3.9.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-postcss": "^6.0.1",
-    "gulp-stylus": "^2.1.1"
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.10",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-stylus": "^2.4.0",
+    "gulp-uglify": "^1.5.3",
+    "nib": "^1.1.0"
   }
 }
