@@ -1,29 +1,7 @@
-// Layout Helpers
-.title
-  font-size: .9rem
-  text-transform: uppercase
-  color: darken(rgba($default),10%)
-  text-align: right
-  border-bottom: 1px solid $border
-.big
-  font-size: 3rem
-.small
-  font-size: 0.8rem
 .box
   box-sizing: border-box
-  padding: 2.2rem
+  padding: 1.1rem
   border: 1px solid $border
-
-ul.inline-list
-  list-style: none
-  margin: 0
-  padding: 0
-  li
-    display: inline-block
-    text-align: center
-  a
-    text-decoration: none
-    padding: 1rem
 
 //Images
 .img-thumbnail
@@ -47,8 +25,6 @@ ul.inline-list
   background: $default
   position: relative
   border: 0
-  border-bottom: 3px solid darken($default, 10%)
-  color: $fontColor
   display: block
   width: 100%
   text-align: center
@@ -62,64 +38,32 @@ ul.inline-list
   line-height: normal
   padding: 1rem 1.8rem
   font-family: $fontBase
-  &:before
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 50%
-    transform: translatex(-50%)
-    height: 8px
-    width:100%
-    border-radius: 50%
-    z-index: -1
-    box-shadow: 0 0 8px darken($border,22%)
+  box-shadow: 0 0 0 24px transparent inset
+  transition: all .3s ease
   &:hover
-    color: $fontColor
-    background: darken($default, 8%)
-  &:active
-    background: darken($default, 18%)
-button::-moz-focus-inner,input::-moz-focus-inner
+    box-shadow: 0 0 0 24px rgba(0,0,0,.3) inset
+button::-moz-focus-inner,
+input::-moz-focus-inner
   border: 0
   padding: 0
-.btn-theme, button.btn-theme
+.btn-theme
   background: $theme
   color: white
   border-color: darken($theme, 12%)
-  &:hover, &:visited, &:active
-    background: darken($theme, 8%) !important
-    color: white
-.btn-support, button.btn-support
+  &:visited, &:active
+    color white
+.btn-support
   background: $support
   color: white
   border-color: darken($support, 14%)
-  &:hover, &:visited, &:active
-    background: darken($support, 10%) !important
-    color: white
-
-.panel
-  margin:0 0 1.5rem 0
-  box-sizing:border-box
-  background: white
-  border:1px solid $border
-  position: relative
-  .panel-header
-    background: $support
-    padding: 1rem
-    h2,h3,h4,h5
-      color: white
-      margin: 0
-      line-height: 1
-  .panel-body
-    overflow:hidden
-    padding: 1rem
-  &:before
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 50%
-    transform: translatex(-50%)
-    height: 8px
-    width:100%
-    border-radius: 50%
-    z-index: -1
-    box-shadow: 0 0 8px darken($border,22%)
+  &:visited, &:active
+    color white
+.btn-default
+  background: $default
+  color: $fontColor
+  border-color: darken($default, 12%)
+.btn-small
+  font-size: 10px;
+  padding: 10px 14px;
+  
+  

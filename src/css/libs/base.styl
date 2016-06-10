@@ -1,3 +1,4 @@
+
 html
   font-size: $baseFontsize
 body
@@ -11,28 +12,31 @@ body
   box-sizing: border-box
   padding: 0
   margin: 0
+  
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic&subset=latin,latin-ext);
 
-h1,h2,h3,h4,.h1,.h2,.h3,.h4
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5
   font-family: $fontTitle
   color: $theme
-  font-weight: 600
+  font-weight: 400
+  line-height: 1.8;
 h1, .h1
   font-size: 2rem
-  margin: 0 0 1rem 0
   text-transform: uppercase
 h2, .h2
   font-size: 1.6rem
-  margin: 0 0 .7rem 0
-h3, .h3
+h3, .h3, h4, .h4, h5, .h5
   font-size: 1.4rem
-  margin: 0 0 .5rem 0
 h4, .h4
+  font-size: 1.2rem
+h5, .h5
   font-size: 1rem
-  margin: 0 0 .5rem 0
+  
 p
   font-size: 1rem
   margin: 0 0 2rem 0
   overflow: hidden
+  
 ul, ol
   margin-bottom: 20px
 ul
@@ -124,15 +128,11 @@ select
   font 12px 'Asap', Arial, sans-serif
   color #474545
   margin 0
-  width 210px
-  max-width 100%
+  width 100%
+  max-width 600px
   display block
-  margin-bottom 20px
+  margin-bottom 1.6rem
   background #fff!important
-  box-shadow 0 2px 3px #c5c5b5 inset
-select
-  padding 5px
-  width 220px
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -147,25 +147,30 @@ legend
   font-weight normal
   font-size 0.7rem
   margin-bottom 0.3rem
-input[type="checkbox"]
-  display inline
+input[type="checkbox"],
+input[type="radio"]
+  display: inline-block;
+  width: auto;
+  margin-right: 6px;
 label span,
 legend span
   font-weight normal
-  font-size 13px
-  color #444
+  font-size $baseFontsize
+  color $fontColor
+  
 table
   width 100%
   border-collapse collapse
 tr
   &:nth-of-type(odd)
-    background #dce4ce
+    background darken($bodyColor, 6%)
 th
-  background #4d301e
+  background $support
   color white
-  font-weight bold
+  font-weight normal
 td,
 th
-  padding 8px 5px
-  border 1px solid #d0dbbd
+  padding 0 5px
+  border 1px solid $border
   text-align left
+  line-height: 2.2

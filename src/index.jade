@@ -1,76 +1,120 @@
 extend layout
 
 block content
-  h1 Titulo Principal h1   
-  img.img-thumbnail.img-wide(src='http://placehold.it/811x180/727272/FFF', alt='')
+  
+  h2.title Tipografía 
+  h1 Titulo Principal h1
+  h2 Titulo Segundo nivel h2
+  h3 Titulo Tercer nivel h3
+  h4 Titulo Cuarto nivel h4
+  h5 Titulo Quinto nivel h5
+
   p
     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique arcu, sit amet pharetra nunc. Nunc sit amet ipsum pulvinar ipsum viverra eleifend non vel lacus. Nulla facilisi. In non nulla ut odio elementum vulputate id et est. 
-  a(href='#') Nullam auctor fringilla diam nec malesuada
+    a(href='#') Nullam auctor fringilla diam nec malesuada
 
-    | Donec porta varius magna, eu posuere ante laoreet id. Pellentesque quis accumsan quam. Aliquam ante elit, posuere eu consectetur at, vulputate vitae est.
-  p
-    | Nullam lobortis arcu id turpis tincidunt sagittis. Nunc eget risus fermentum, tincidunt dui sit amet, dignissim sem. Maecenas feugiat sit amet erat sit amet volutpat. Sed tempus, erat quis mollis lobortis, urna tellus facilisis ipsum, non rhoncus felis ipsum eu tortor. Nulla eu convallis nunc. Ut quis erat tempus, tincidunt est sed, viverra libero. Fusce vitae nunc id lorem consectetur tempus. 
-  a.btn.btn-theme(href='#') .btn theme
-
-  hr
-
-  h2 Titulo Segundo nivel h2
-  img.img-thumbnail.img-wide(src='http://placehold.it/811x180/727272/FFF', alt='') 
-  p
-    | Phasellus nisi felis, interdum dapibus aliquam fringilla, tempus vel tortor. Cras leo felis, ultrices vitae auctor eu, iaculis ut massa. Nunc pellentesque est ac justo ultrices blandit. Vestibulum at pharetra nibh. Curabitur at ante sit amet neque tristique malesuada. Donec eu nisl sem. Aliquam vehicula vel massa sed imperdiet.
-  p
-    | Nulla adipiscing bibendum ipsum pulvinar viverra. Sed quis facilisis arcu. Fusce ornare nibh a turpis laoreet, vitae dapibus mi tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in metus scelerisque, viverra quam id, facilisis elit. In varius lacus eget porta malesuada. Sed vel mauris hendrerit, adipiscing eros rutrum, suscipit lorem. Praesent ut dictum tortor, vel congue est. In eget sem at tortor rutrum imperdiet id in augue. Curabitur rhoncus nunc non quam hendrerit faucibus. Ut non diam luctus, consectetur justo a, sodales elit. Fusce gravida, ligula non posuere dictum, nisl tortor lacinia enim, sed euismod velit dolor at ipsum. Maecenas ipsum nisl, porttitor eget aliquam ac, volutpat ut mauris. Sed vel rutrum erat.   
-  a.btn.btn-support(href='#') .btn-support
-
-  hr
-
-  h3 Titulo Tercer Nivel h3
-  p
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique arcu, sit amet pharetra nunc. Nunc sit amet ipsum pulvinar ipsum viverra eleifend non vel lacus. Nulla facilisi. In non nulla ut odio elementum vulputate id et est. Nullam auctor fringilla diam nec malesuada. Donec porta varius magna, eu posuere ante laoreet id. Pellentesque quis accumsan quam. Aliquam ante elit, posuere eu consectetur at, vulputate vitae est.
-  p
-    | Nullam lobortis arcu id turpis tincidunt sagittis. Nunc eget risus fermentum, tincidunt dui sit amet, dignissim sem. Maecenas feugiat sit amet erat sit amet volutpat. Sed tempus, erat quis mollis lobortis, urna tellus facilisis ipsum, non rhoncus felis ipsum eu tortor. Nulla eu convallis nunc. Ut quis erat tempus, tincidunt est sed, viverra libero. Fusce vitae nunc id lorem consectetur tempus.   
-  a.btn.btn-default(href='#') .btn-default
-
-  hr
-
-  h2.title Lista Ordenada   
-  ol
-    li
-      | Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. 
-    li
-      | Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.     
-    li
-      | Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.  
-    li
-      | Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
-
-  h2.title BlockQuote  
   blockquote
     p
       | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
 
-  h2.title Lista Desordenada 
-  ul
-    li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-    li Aliquam tincidunt mauris eu risus.
+  .row
+    .half-block
+      h2.title Texto Resaltado  
+      p.lead
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique arcu, sit amet pharetra nunc. Nunc sit amet ipsum pulvinar ipsum viverra eleifend non vel lacus. Nulla facilisi. In non nulla ut odio elementum vulputate id et est.
 
-  h2.title Lista de Definiciones 
-  dl
-    dt Definition list
-    dd
-      | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    dt Lorem ipsum dolor sit amet  
-    dd
-      | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    .half-block
+      h2.title Texto de Soporte 
+      p.small
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique arcu, sit amet pharetra nunc. Nunc sit amet ipsum pulvinar ipsum viverra eleifend non vel lacus. Nulla facilisi. In non nulla ut odio elementum vulputate id et est.
+    
 
-  h2.title Texto Resaltado  
-  p.lead
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique arcu, sit amet pharetra nunc. Nunc sit amet ipsum pulvinar ipsum viverra eleifend non vel lacus. Nulla facilisi. In non nulla ut odio elementum vulputate id et est.
+  .row
+    .half-block
+      h2.title Lista Ordenada   
+      ol
+        li
+          | Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. 
+        li
+          | Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.     
+        li
+          | Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.  
+        li
+          | Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
 
-  h2.title Texto de Soporte 
-  p.small
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique arcu, sit amet pharetra nunc. Nunc sit amet ipsum pulvinar ipsum viverra eleifend non vel lacus. Nulla facilisi. In non nulla ut odio elementum vulputate id et est.
+    .half-block
+      h2.title Lista de Definiciones 
+      dl
+        dt Lorem ipsum dolor sit amet  
+        dd
+          | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        dt Lorem ipsum dolor sit amet  
+        dd
+          | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
+  .row
+    .half-block
+      h3.title Formulario de Ejemplo   
+      form(action='#', method='post')
+        div.form-block.row
+          .half-block
+            label Campo de texto:       
+            input#name(type='text', name='text', value='', tabindex='1')
+            label Campo de seleccion de opciones      
+            select(name='select-choice')
+              option(value='Choice 1') ejemplo 1         
+              option(value='Choice 2') ejemplo 2          
+              option(value='Choice 3') ejemplo 3
+          .half-block
+            div.form-block
+              label Checkboxes / Radiobuttons
+              .row    
+                input(type='checkbox', name='checkbox')
+                input(type='checkbox', name='checkbox')
+              .row   
+                input(type='radio', name='radio-choice', tabindex='2', value='ejemplo-1')    
+                input(type='radio', name='radio-choice', tabindex='3', value='ejemplo-2')
+                input(type='radio', name='radio-choice', tabindex='3', value='ejemplo-2')
+
+        div.form-block
+          label Campo de area de mensaje:     
+          textarea(cols='40', rows='5', name='textarea')
+
+        div.form-block
+          input.btn.btn-default(type='button', value='Enviar Formulario')
+
+    .half-block
+      h2.title Tabla de Ejemplo
+      table
+        thead
+          tr
+            th Encabezado   
+            th Encabezado    
+            th Encabezado    
+            th Encabezado
+
+        tbody
+          tr
+            td Contenido       
+            td Contenido      
+            td Contenido      
+            td Contenido   
+          tr
+            td Contenido       
+            td Contenido      
+            td Contenido      
+            td Contenido
+          tr
+            td Contenido       
+            td Contenido      
+            td Contenido      
+            td Contenido
+          tr
+            td Contenido       
+            td Contenido      
+            td Contenido      
+            td Contenido
+   
   h2.title Rejilla Simple
   .row
     .half-block
@@ -106,108 +150,9 @@ block content
         | .SIDEBAR   
     .content-right
       .box 
-        | .CONTENT-RIGHT
+        | .CONTENT-RIGHT 
 
-  h2.title Modulos
-  .panel
-    h2 Titulo de Panel 
-    img.img-left(src='http://placehold.it/220x220/333/FFF', alt='')
-    .panel-body
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique justo sed risus tristique, quis sodales nulla porttitor. Sed vestibulum metus id sodales porttitor. Donec condimentum volutpat ultricies. Praesent interdum suscipit nunc a lobortis. Quisque semper metus nisi, nec dignissim enim dapibus id. Aenean suscipit, leo in suscipit tincidunt, sapien leo mattis odio, sed consequat ante felis sed nulla. Curabitur in sem sed arcu consectetur egestas.    
-      a.btn.btn-default(href='#') 
-        | boton de ejemplo
-
-
-  .module
-    .module-header
-      h2 Titulo de Modulo 
-    .module-body
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique justo sed risus tristique, quis sodales nulla porttitor. Sed vestibulum metus id sodales porttitor. Donec condimentum volutpat ultricies. Praesent interdum suscipit nunc a lobortis. Quisque semper metus nisi, nec dignissim enim dapibus id. Aenean suscipit, leo in suscipit tincidunt, sapien leo mattis odio, sed consequat ante felis sed nulla. Curabitur in sem sed arcu consectetur egestas.  
-      p
-        | Duis pellentesque vitae nibh vel euismod. Praesent arcu ligula, rhoncus ac porttitor eu, pharetra et diam. Aliquam et sagittis diam, ac fermentum arcu. Vivamus adipiscing dui nisi. In urna sem, luctus consectetur justo nec, porta aliquet neque. Cras ac tempor orci. Donec purus sapien, auctor eu lectus sed, lobortis bibendum nisl. Donec convallis ultricies ligula at lacinia. Sed in convallis metus.
-
-
-  h2.title Tabla de Ejemplo
-  table
-    thead
-      tr
-        th Encabezado   
-        th Encabezado    
-        th Encabezado    
-        th Encabezado
-
-    tbody
-      tr
-        td Contenido       
-        td Contenido      
-        td Contenido      
-        td Contenido   
-      tr
-        td Contenido       
-        td Contenido      
-        td Contenido      
-        td Contenido
-      tr
-        td Contenido       
-        td Contenido      
-        td Contenido      
-        td Contenido
-        
-
-  h3.title Formulario de Ejemplo   
-  form(action='#', method='post')
-    div
-      label(for='text') Etiqueta campo de texto:       
-      input#name(type='text', name='text', value='', tabindex='1')
-
-    div
-      label(for='email') Email:       
-      input(type='email', name='email', value='', tabindex='1')   
-    div
-      label(for='tel') phone:       
-      input(type='tel', name='tel', value='', tabindex='1')
-
-    div
-      label(for='password') password:      
-      input(type='password', name='password', value='', tabindex='1')  
-    div
-      label(for='search') Busqueda:     
-      input(type='search', name='search', value='', tabindex='1')
-
-    div
-      label(for='url') URL:     
-      input#name(type='url', name='url', value='', tabindex='1')
-
-    div
-      label(for='date') Date:    
-      input#name(type='date', name='date', value='', tabindex='1')
-
-    div
-      label(for='range') Range:     
-      input#name(type='range', name='range', value='', tabindex='1')
-
-    div
-      h4 Radio Buttons
-  
-      label(for='radio-choice-1') ejemplo 1       
-      input#radio-choice-1(type='radio', name='radio-choice-1', tabindex='2', value='ejemplo-1')     
-      label(for='radio-choice-2') ejemplo 2      
-      input#radio-choice-2(type='radio', name='radio-choice-2', tabindex='3', value='ejemplo-2')
-
-    div
-      label(for='select-choice') Select Ejemplo:      
-      select#select-choice(name='select-choice')
-        option(value='Choice 1') ejemplo 1         
-        option(value='Choice 2') ejemplo 2          
-        option(value='Choice 3') ejemplo 3
-
-    div
-      label(for='textarea') Textarea:     
-      textarea#textarea(cols='40', rows='8', name='textarea')   
-    div
-      label(for='checkbox') Checkbox:      
-      input#checkbox(type='checkbox', name='checkbox')
-    div
-      input.btn.btn-default(type='button', value='Enviar')
+  h2.title Botones
+  a.btn.btn-theme(href='#') .btn-theme  
+  a.btn.btn-support(href='#') .btn-support  
+  a.btn.btn-default(href='#') .btn-default

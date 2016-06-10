@@ -2,21 +2,19 @@
 //- Variables
 $baseFontsize = 12px
 $fontBase     = "Open Sans", sans-serif
-$fontTitle    = "Armata", arial, sans-serif
+$fontTitle    = "Lato", arial, sans-serif
 
 $bodyColor    = whitesmoke
 $fontColor    = #666
 $theme        = #203648
 $support      = #1C786B
-$default      = darken($bodyColor, 18%)
-$border       = darken($default, 24%)
+$default      = darken($bodyColor, 12%)
+$border       = darken($default, 6%)
 
 $light        = alpha(#fff,0.6)
 $dark         = alpha(#000,0.6)
 
-
 @require 'nib'
-
 
 // RESET
    global-reset()
@@ -24,7 +22,8 @@ $dark         = alpha(#000,0.6)
 // BASE
 @import 'libs/base.styl'
 @import 'libs/grid.styl'
-@import 'libs/modules.styl'
+@import 'libs/helpers.styl'
+@import 'libs/modules.styl' 
 
 // LAYOUT
 @import 'libs/layout.styl'
