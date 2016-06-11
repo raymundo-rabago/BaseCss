@@ -30,7 +30,10 @@ gulp.task('styles', function () {
 
 // SCRIPTS
 gulp.task('js', function() {
-  return gulp.src('./src/js/*.js')
+  return gulp.src([
+        './src/js/libs/gfonts.js', 
+        './src/js/libs/okaynav.js'
+    ])
     .pipe( concat('app.min.js'))
     .pipe( uglify() )
     .pipe( gulp.dest('./build/assets/js/'));
