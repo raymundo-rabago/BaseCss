@@ -1,6 +1,6 @@
 var gulp                = require('gulp'),
     nib                 = require('nib'),
-    browserSync         = require('browser-sync'),
+    browserSync         = require('browser-sync').create(),
     plumber             = require('gulp-plumber'),
     rename              = require('gulp-rename'),
     postcss             = require('gulp-postcss'),
@@ -33,14 +33,16 @@ gulp.task('js', function() {
   return gulp.src('./src/js/*.js')
     .pipe( concat('app.min.js'))
     .pipe( uglify() )
-    .pipe( gulp.dest('./build/assets/js/'));
+    .pipe( gulp.dest('./build/assets/js/'))
+    .pipe(browserSync.stream());
 });
 
 // TEMPLATES
 gulp.task('views', function() {
   return gulp.src('src/*.jade')
     .pipe( jade({ pretty: true }))
-    .pipe( gulp.dest('./build'));
+    .pipe( gulp.dest('./build'))
+    .pipe(browserSync.stream());
 });
 
 // SERVER
@@ -56,8 +58,9 @@ gulp.task('server', function() {
 // WATCH
 gulp.task('watch', function () {
     gulp.watch(['./src/css/**/*.styl'], ['styles']);
-    gulp.watch('./src/**/*.jade',['views']);
-    gulp.watch("./build/*.html").on('change', browserSync.reload);
+    gulp.watch(['./src/js/*/*.js'], ['js']);
+    gulp.watch(['./src/views/**/**/*.jade'], ['views']);
+    gulp.watch('./build/*.html').on('change', browserSync.reload);
 });
 
 // DEFAULT
